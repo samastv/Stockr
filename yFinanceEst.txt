@@ -1,0 +1,7 @@
+<td class="Ta(end) Fw(b) Lh(14px)" data-test="ONE_YEAR_TARGET_PRICE-value" data-reactid="101">
+<span class="Trsdu(0.3s) " data-reactid="102">
+ <!-- react-text: 103 -->
+ 7.00
+ <!-- /react-text -->
+</span>
+</td>
