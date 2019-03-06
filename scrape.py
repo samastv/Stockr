@@ -19,6 +19,9 @@ while symbol != 'stop':
 	estimate = None
 	current = None
 
+	# STOCKTWITS NO LONGER ALLOWS WEB SCRAPING
+	# API DOES NOT PROVIDE SENTIMENT DATA
+
 	# url = 'https://stocktwits.com/symbol/' + symbol
 	# response = requests.get(url)
 	# html = response.content
@@ -49,7 +52,6 @@ while symbol != 'stop':
 	html = response.content
 
 	soup = BeautifulSoup(html)
-	# estimate = soup.find('td', attrs={'class': 'Ta(end) Fw(b) Lh(14px)', 'data-test': 'ONE_YEAR_TARGET_PRICE-value'})
 	estimate = soup.find('td', attrs={'class': 'Ta(end) Fw(600) Lh(14px)', 'data-test': 'ONE_YEAR_TARGET_PRICE-value'})
 
 	if estimate != None:
